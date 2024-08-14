@@ -1,0 +1,289 @@
+body {
+    font-family: 'Poppins', Arial, sans-serif; /* Gunakan font yang lebih modern */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0; /* Tambahkan lebih banyak padding untuk memberikan ruang */
+    text-align: left;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px; /* Tambahkan lebih banyak ruang antar item */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transisi untuk efek hover */
+}
+
+nav ul li a:hover {
+    background-color: #555; /* Ubah warna latar belakang saat hover */
+    transform: scale(1.1); /* Menambah efek zoom pada link saat di-hover */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#hero {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), url('background.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 120px 20px; /* Tambahkan lebih banyak padding untuk ruang di sekitar teks */
+    text-align: center;
+}
+
+#hero h1, #hero p {
+    animation: fadeIn 2s ease-in-out; /* Animasi fade-in untuk teks di hero */
+}
+#pesan h2, #contact, #projects, #about {
+    animation: fadeIn 2s ease-in-out; /* Animasi fade-in untuk teks di hero */
+    text-align: center;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#about, #projects, #contact {
+    padding: 60px 20px; /* Tambahkan lebih banyak padding */
+    text-align: center;
+    background-color: #fff;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Gunakan gap untuk lebih mudah mengatur jarak antar item */
+}
+
+.project {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px; /* Tambahkan border radius untuk sudut melengkung */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Tambahkan transisi */
+}
+
+.project:hover {
+    transform: translateY(-10px); /* Efek hover untuk elemen proyek */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2); /* Tambahkan efek bayangan saat hover */
+}
+
+.project-image {
+    width: 100%; /* Lebar gambar mengikuti lebar kontainer proyek */
+    height: auto; /* Tinggi otomatis sesuai dengan lebar untuk menjaga proporsi */
+    max-height: 200px; /* Maksimum tinggi gambar */
+    object-fit: cover; /* Memastikan gambar tidak terdistorsi dan mengisi area kontainer */
+    border-radius: 5px; /* Border radius untuk sudut melengkung gambar */
+}
+
+
+.hero-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 20px auto;
+    object-fit: cover;
+    border: 5px solid #fff; /* Tambahkan border putih untuk gambar profil */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Tambahkan efek bayangan */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+form::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 150%;
+    height: 150%;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    z-index: -1;
+    transform: rotate(30deg);
+    opacity: 0.2;
+}
+
+form label {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form textarea:focus {
+    border-color: #ff7e5f;
+    outline: none;
+}
+
+form button {
+    background-color: #ff7e5f;
+    color: #fff;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+form button:hover {
+    background-color: #feb47b;
+    transform: translateY(-3px);
+}
+
+form button:active {
+    transform: translateY(1px);
+}
+
+form button::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.5s ease;
+    z-index: 0;
+}
+
+form button:hover::after {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+#success-message {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#success-message p {
+    margin: 0 0 10px 0;
+}
+
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #007BFF; /* Ubah warna teks saat hover pada link di footer */
+}
+#social-media {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#social-media h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Ruang antar ikon */
+}
+
+.social-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+}
+
+.social-icon img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-icon img:hover {
+    transform: scale(1.1); /* Zoom effect saat hover */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
