@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Saya</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">Tentang Saya</a></li>
+                <li><a href="#projects">Proyek</a></li>
+                <li><a href="#contact">Kontak</a></li>
+                <li><a href="#pesan">Pesan</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <img src="foto-andaa.jpg" alt="Foto Ammar Al Hakim Asshiddiqi" class="hero-image">
+        <h1>Halo, Saya Ammar Al Hakim Asshiddiqi</h1>
+        <p>UI/UX Designer</p>
+    </section>
+
+    <section id="about">
+        <h2>Tentang Saya</h2>
+        <p style="text-align: justify; margin: 20px;">
+            Halo! Saya Saya Ammar Al Hakim Asshiddiqi, seorang UI/UX Designer fresh graduate dengan semangat tinggi dan dedikasi untuk menciptakan pengalaman pengguna yang menarik dan intuitif. Lulusan dari Universitas Ahmad Dahlan di bidang Informatika, saya telah mendapatkan pemahaman yang kuat tentang prinsip-prinsip desain, prototyping, dan user testing.
+            Selama masa studi, saya aktif dalam berbagai proyek desain yang melibatkan pembuatan user interface untuk aplikasi mobile dan website. Saya selalu tertarik dengan bagaimana desain dapat mempengaruhi interaksi pengguna dan berusaha untuk membuat solusi yang tidak hanya estetis, tetapi juga fungsional.
+            Saya percaya bahwa desain yang baik adalah hasil dari proses iteratif, di mana umpan balik pengguna menjadi bahan bakar untuk perbaikan yang terus-menerus. Dengan keterampilan dalam tools seperti Figma, Adobe XD, dan Sketch, serta pemahaman tentang HTML dan CSS dasar, saya siap untuk menghadapi tantangan dunia kerja.
+            Saya sangat antusias untuk berkontribusi dalam tim yang dinamis, di mana saya bisa terus belajar dan mengembangkan keterampilan saya lebih lanjut. Jika Anda mencari seorang desainer yang kreatif, proaktif, dan berorientasi pada detail, saya akan dengan senang hati menjadi bagian dari proyek Anda berikutnya.
+        </p>
+    </section>
+
+    <section id="projects">
+        <h2>Proyek</h2>
+        <div class="project-grid">
+            <div class="project">
+                <img src="project1.png" alt="Deskripsi Proyek 1" class="project-image">
+                <h3>Proyek 1</h3>
+                <p>Deskripsi singkat proyek</p>
+            </div>
+            <div class="project">
+                <img src="project2.png" alt="Deskripsi Proyek 2" class="project-image">
+                <h3>Proyek 2</h3>
+                <p>Deskripsi singkat proyek</p>
+            </div>
+            <!-- Tambahkan lebih banyak proyek jika diperlukan -->
+        </div>
+    </section>
+
+    <!-- Social Media Section -->
+    <section id="social-media">
+        <h2>Ikuti Saya</h2>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/ui.aaa_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="social-icon">
+                <img src="instagram-icon.png" alt="Instagram">
+            </a>
+            <!-- Tambahkan lebih banyak ikon jika diperlukan -->
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Kontak</h2>
+        <p>Hubungi saya di : ammaralhakim717@gmail.com</p>
+    </section>
+
+    <section id="pesan">
+        <h2>Tinggalkan Pesan</h2>
+        <form id="contact-form" action="https://formspree.io/f/mdknzrey" method="POST">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="_replyto" required>
+    
+            <label for="message">Pesan:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+    
+            <button type="submit">Kirim</button>
+        </form>
+        <div id="success-message" style="display:none;">
+            <p>Pesan Anda telah berhasil dikirim!</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 ammaral. Semua Hak Dilindungi.</p>
+    </footer>   
+
+    <script src="script.js"></script>
+</body>
+</html>
